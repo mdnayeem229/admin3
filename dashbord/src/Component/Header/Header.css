@@ -1,0 +1,24 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 102%;
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    background: #fff;
+    margin-left: -0.5rem;
+}
+header h2{
+    color: #555555;
+    font-weight: boder;
+    font-size:1.5rem;
+    margin-top: 10px;
+}
+.hero .icon img{
+    width: 1.2rem;
+    margin-left: 1.3rem;
+}
+
+
+
+

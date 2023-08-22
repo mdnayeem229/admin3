@@ -1,0 +1,139 @@
+.content-1{
+    margin-left: 240px;
+    margin-top:2rem;
+}
+.wrapper{
+    width: 98%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem auto;
+}
+.navbar nav ul li{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    background: #018EDC;
+}
+.navbar nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.navbar nav a:hover{
+    background: none;
+}
+.calendar{
+    font-size: 1rem;
+    color: #626262;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   width: 60%;
+   margin: 0.5rem 3.2rem 0px auto;
+}
+header .current-date{
+    font-size: 20px;
+    font-weight: bold;
+}
+header .icons span:hover{
+    background: #f2f2f2;
+}
+header .icons span:last-child{
+    margin-right: -10px;
+}
+.calendar ul{
+    display: flex;
+    list-style:none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar ul li{
+    width: calc(97% / 7);
+}
+.calendar{
+    padding: 1rem;
+}
+.calendar .days{
+    margin-bottom: 10px;
+}
+.calendar .days li{
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+.calendar .weeks li{
+    background: #01579B;
+    color: #fff;
+    font-size: 16px;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+.calendar .days li::before{
+    position: absolute;
+    content: '';
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}
+.days li:hover::before{
+    background: #f2f2f2;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    background: yellow;
+    color:#000;
+}
+.days li.active::before{
+    background: yellow;
+}
+.icons span i{
+    background: #018EDC;
+    padding: 0.5rem 0.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width:991px){
+    .calendar ul li{
+        width: calc(97% / 5);
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar nav ul li{
+        padding: 0.2rem 0.5rem;
+    }
+    .navbar nav ul li a{
+        font-size: 10px;
+    }
+    .calendar1{
+        margin-left: 1rem;
+    }
+}
+@media only screen and (max-width:771px){
+    .calendar ul li{
+        width: calc(97% / 4);
+    }
+}

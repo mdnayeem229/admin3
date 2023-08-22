@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body{
+  background: #efefef;
+  color: #000;
+}
+.content{
+  margin-left: 190px;
+  margin-right: 4rem;
+}
+.container{
+  width: 100%;
+  margin-left:50px;
+  margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
