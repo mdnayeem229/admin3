@@ -21,6 +21,14 @@ body{
   margin-left:50px;
   margin-right: 1rem;
 }
+@media only screen and (max-width:991px){
+  .content{
+    margin-left: 0px;
+  }
+  .container{
+    margin-left: 35px;
+  }
+}
 
 
 
